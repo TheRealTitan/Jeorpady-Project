@@ -14,15 +14,66 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Jeorpady_Project
-	{
+{
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	/// 
+	public static class ThisIsAStaticClass
+	{
+		public static int RetInt()
 		{
-		public MainWindow()
-			{
-			InitializeComponent();
-			}
+			return 5;
 		}
 	}
+
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			/*Window window = new Window();
+			window.Show();*/
+
+			InitializeComponent();
+			this.WindowState = WindowState.Maximized;
+			this.WindowStyle = WindowStyle.None;
+
+			BrushConverter converter = new BrushConverter();
+			Brush blueBrush = (Brush)converter.ConvertFromString("#000000");
+		}
+
+		private void EscapeWindowHandler(object sender, KeyEventArgs e)
+		{
+			if(e.Key == Key.Escape)
+			{
+				Application.Current.Shutdown();
+			}
+
+			if(e.Key == Key.Enter)
+			{
+				Console.WriteLine("Enter");
+
+				Main.Content = new MainMenu();
+			}
+
+			if (e.Key == Key.End)
+			{
+				Main.Content = new ScoreBoard();
+			}
+		}
+
+		private void DisplayMenu()
+		{
+			BrushConverter converter = new BrushConverter();
+			Brush blueBrush = (Brush)converter.ConvertFromString("#0e1684");
+			Brush blackBrush = (Brush)converter.ConvertFromString("#000000");
+						
+			Grid grid = new Grid();
+
+			grid.Children.Clear();
+			grid.Background = blueBrush;
+
+			this.Content = grid;
+		}
+	}
+}

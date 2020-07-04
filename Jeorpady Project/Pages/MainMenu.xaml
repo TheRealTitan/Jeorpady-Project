@@ -1,0 +1,17 @@
+﻿<Page x:Class="Jeorpady_Project.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Jeorpady_Project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Menu1">
+
+    <Grid Background="#0e1684">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Content="Start" Click="BtnStart" MinHeight="25" MinWidth="75"></Button>
+            <Button Content="Exit" Margin="0, 10, 0, 0" MinHeight="25" MinWidth="75" Click="BtnExit"></Button>
+        </StackPanel>
+    </Grid>
+</Page>
