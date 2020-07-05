@@ -11,8 +11,10 @@
     <Grid Background="#0e1684">
         <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Button Content="Start" MinHeight="25" MinWidth="75" Click="StartGame"></Button>
-            <Button Content="Set Board" Margin="0, 10, 0, 0" MinHeight="25" MinWidth="75"></Button>
-            <Button Content="Back" Margin="0, 10, 0, 0" MinHeight="25" MinWidth="75"></Button>
+            <Button Content="Set Players" Margin="0, 10, 0, 0" MinHeight="25" MinWidth="75" Click="GoToSetPlayers"></Button>
+            <Button Content="Set Board" Margin="0, 10, 0, 0" MinHeight="25" MinWidth="75" Click="GoToSetBoard"></Button>
+            <Button Content="Set Final Question" Margin="0, 10, 0, 0" MinHeight="25" MinWidth="75"></Button>
+            <Button Content="Back" Margin="0, 10, 0, 0" MinHeight="25" MinWidth="75" Click="BackToainMenuBtn"></Button>
         </StackPanel>
     </Grid>
 </Page>

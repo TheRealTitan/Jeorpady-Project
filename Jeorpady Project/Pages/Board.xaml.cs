@@ -85,25 +85,7 @@ namespace Jeorpady_Project
 			Console.WriteLine(grid.Children.Count);
 
 			this.Content = grid;
-
-			if (JeopardyBoard.Categories.FirstOrDefault(x => x.Items.Count(y => y.HasBeenAnswered == false) > 0) == null)
-			{
-				Console.WriteLine("Done");
-				if (JeopardyBoard.HasFinalQuestion())
-				{
-					((MainWindow)Application.Current.MainWindow).Main.Content = ""; //TODO: Final Question
-				}
-				else
-				{
-					((MainWindow)Application.Current.MainWindow).Main.Content = new ScoreBoard(); //Game Over Page (ScoreBoard)
-				}
-			}
 			#endregion
-
-			foreach(JeopardyPlayer player in JeopardyBoard.Players)
-			{
-				Console.WriteLine(player.Name + ": " + player.Points);
-			}
 		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)

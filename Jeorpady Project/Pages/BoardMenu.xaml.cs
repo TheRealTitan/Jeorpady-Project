@@ -84,5 +84,20 @@ namespace Jeorpady_Project
 		{
 			((MainWindow)Application.Current.MainWindow).Main.Content = new Board();
 		}
+
+		private void GoToSetPlayers(object sender, RoutedEventArgs e)
+		{
+			((MainWindow)Application.Current.MainWindow).Main.Content = new SetPlayers();
+		}
+
+		private void GoToSetBoard(object sender, RoutedEventArgs e)
+		{
+			((MainWindow)Application.Current.MainWindow).Main.Content = new SetBoard();
+		}
+
+		private void BackToainMenuBtn(object sender, RoutedEventArgs e)
+		{
+			((MainWindow)Application.Current.MainWindow).Main.Content = new MainMenu();
+		}
 	}
 }

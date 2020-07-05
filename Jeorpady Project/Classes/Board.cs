@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -63,10 +65,23 @@ namespace Jeorpady_Project
 
 	public class JeopardyItemVideo : IJeopardyItem
 	{
+		public JeopardyItemVideo(string question, string answer, string videoUrl)
+		{
+			Question = question;
+			Answer = answer;
+			VideoUrl = videoUrl;
+		}
+
+		public JeopardyItemVideo()
+		{
+
+		}
+
 		public string Question { get; set; }
 		public string Answer { get; set; }
 		public int Points { get; set; }
-		public bool HasBeenAnswered { get; set; }
+		public bool HasBeenAnswered { get; set; } = false;
+		public string VideoUrl { get; set; }
 
 		public Categories ItemType
 		{
@@ -79,10 +94,23 @@ namespace Jeorpady_Project
 
 	public class JeopardyItemImage : IJeopardyItem
 	{
+		public JeopardyItemImage(string question, string answer, string imageUrl)
+		{
+			Question = question;
+			Answer = answer;
+			ImageUrl = imageUrl;
+		}
+
+		public JeopardyItemImage()
+		{
+
+		}
+
 		public string Question { get; set; }
 		public string Answer { get; set; }
 		public int Points { get; set; }
-		public bool HasBeenAnswered { get; set; }
+		public bool HasBeenAnswered { get; set; } = false;
+		public string ImageUrl { get; set; }
 
 		public Categories ItemType
 		{
@@ -95,10 +123,21 @@ namespace Jeorpady_Project
 
 	public class JeopardyItemText : IJeopardyItem
 	{
+		public JeopardyItemText(string question, string answer)
+		{
+			Question = question;
+			Answer = answer;
+		}
+
+		public JeopardyItemText()
+		{
+
+		}
+
 		public string Question { get; set; }
 		public string Answer { get; set; }
 		public int Points { get; set; }
-		public bool HasBeenAnswered { get; set; }
+		public bool HasBeenAnswered { get; set; } = false;
 
 		public Categories ItemType
 		{
@@ -116,5 +155,20 @@ namespace Jeorpady_Project
 		string Answer { get; set; }
 		int Points { get; set; }
 		bool HasBeenAnswered { get; set; }
+	}
+
+	public class JeopardyConverter : JsonConverter<Version>
+	{
+		public override void WriteJson(JsonWriter writer, Version value, JsonSerializer serializer)
+		{
+			writer.WriteValue(value.ToString());
+		}
+
+		public override Version ReadJson(JsonReader reader, Type objectType, Version existingValue, bool hasExistingValue, JsonSerializer serializer)
+		{
+			string s = (string)reader.Value;
+
+			return new Version(s);
+		}
 	}
 }

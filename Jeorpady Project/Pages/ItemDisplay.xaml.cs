@@ -100,7 +100,23 @@ namespace Jeorpady_Project
 				chosenPlayer.Points += ((IJeopardyItem)((Button)sender).Tag).Points;
 			}
 
-			((MainWindow)Application.Current.MainWindow).Main.Content = new Board();
+			if (JeopardyBoard.Categories.FirstOrDefault(x => x.Items.Count(y => y.HasBeenAnswered == false) > 0) == null)
+			{
+				Console.WriteLine("Done");
+				if (JeopardyBoard.HasFinalQuestion())
+				{
+					((MainWindow)Application.Current.MainWindow).Main.Content = new FinalQuestion(); //TODO: Final Question
+				}
+				else
+				{
+					((MainWindow)Application.Current.MainWindow).Main.Content = new ScoreBoard(); //Game Over Page (ScoreBoard)
+				}
+			}
+			else
+			{
+				((MainWindow)Application.Current.MainWindow).Main.Content = new Board();
+			}
+
 		}
 
 		private void ChoosePlayer(object sender, RoutedEventArgs e)
