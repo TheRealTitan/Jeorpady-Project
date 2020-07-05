@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Jeorpady_Project
 {
     /// <summary>
-    /// Interaction logic for SetPlayers.xaml
+    /// Interaction logic for BoardWindow.xaml
     /// </summary>
-    public partial class SetPlayers : Page
+    public partial class BoardWindow : Window
     {
-        public SetPlayers()
+        public BoardWindow()
         {
             InitializeComponent();
         }

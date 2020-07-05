@@ -26,8 +26,6 @@ namespace Jeorpady_Project
 
 			#region built shit
 			Grid grid = new Grid();
-			//grid.VerticalAlignment = VerticalAlignment.Stretch;
-			//grid.HorizontalAlignment = HorizontalAlignment.Stretch;
 
 			BrushConverter converter = new BrushConverter();
 			Brush blueBrush = (Brush)converter.ConvertFromString("#0e1684");
@@ -41,13 +39,7 @@ namespace Jeorpady_Project
 			{
 				grid.ColumnDefinitions.Add(new ColumnDefinition());
 
-				Label category = new Label();
-				category.SetValue(Grid.ColumnProperty, counter);
-				category.SetValue(Grid.RowProperty, 0);
-				category.Content = c.CategoryName;
-				category.Background = blueBrush;
-				category.HorizontalAlignment = HorizontalAlignment.Center;
-				category.VerticalAlignment = VerticalAlignment.Center;
+				Label category = GenerateCategory(c, counter);
 				
 				grid.Children.Add(category);
 
@@ -59,22 +51,13 @@ namespace Jeorpady_Project
 					}
 					if(c.Items[i] != null && c.Items[i].HasBeenAnswered == false)
 					{
-						Button button = new Button();
-						c.Items[i].Points = (i + 1) * JeopardyBoard.DefaultPoints;
-						button.Content = c.Items[i].Points;
-						button.Margin = new Thickness(5, 5, 5, 5);
-						button.SetValue(Grid.ColumnProperty, counter);
-						button.SetValue(Grid.RowProperty, i + 1);
-						button.Tag = c.Items[i];
+						Button button = GenerateItem(c.Items[i], counter, i + 1);
 						button.Click += Button_Click;
 						grid.Children.Add(button);
 					}
 					else
 					{
-						Label label = new Label();
-						label.Margin = new Thickness(5, 5, 5, 5);
-						label.SetValue(Grid.ColumnProperty, counter);
-						label.SetValue(Grid.RowProperty, i + 1);
+						Label label = GenerateEmptyItem(counter, i + 1);
 						grid.Children.Add(label);
 					}
 
@@ -90,10 +73,50 @@ namespace Jeorpady_Project
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			IJeopardyItem item = (IJeopardyItem)((Button)sender).Tag;
+			JeopardyItem item = (JeopardyItem)((Button)sender).Tag;
 			item.HasBeenAnswered = true;
 
 			((MainWindow)Application.Current.MainWindow).Main.Content = new ItemDisplay(item);
+		}
+
+		private static Label GenerateCategory(JeopardyCategory category, int yCord)
+		{
+			BrushConverter converter = new BrushConverter();
+			Brush blueBrush = (Brush)converter.ConvertFromString("#0e1684");
+
+			Label label = new Label();
+			label.SetValue(Grid.ColumnProperty, yCord);
+			label.SetValue(Grid.RowProperty, 0);
+			label.FontStretch = FontStretches.Expanded;
+			label.Content = category.CategoryName;
+			label.Background = blueBrush;
+			label.HorizontalAlignment = HorizontalAlignment.Center;
+			label.VerticalAlignment = VerticalAlignment.Center;
+
+			return label;
+		}
+
+		private static Label GenerateEmptyItem(int yCord, int xCord)
+		{
+			Label label = new Label();
+			label.Margin = new Thickness(5, 5, 5, 5);
+			label.SetValue(Grid.ColumnProperty, yCord);
+			label.SetValue(Grid.RowProperty, xCord);
+
+			return label;
+		}
+
+		private static Button GenerateItem(JeopardyItem item, int yCord, int xCord)
+		{
+			Button button = new Button();
+			item.Points = xCord * JeopardyBoard.DefaultPoints;
+			button.Content = item.Points;
+			button.Margin = new Thickness(5, 5, 5, 5);
+			button.SetValue(Grid.ColumnProperty, yCord);
+			button.SetValue(Grid.RowProperty, xCord);
+			button.Tag = item;
+
+			return button;
 		}
 	}
 }

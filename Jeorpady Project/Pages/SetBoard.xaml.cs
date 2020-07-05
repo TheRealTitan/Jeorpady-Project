@@ -51,7 +51,7 @@ namespace Jeorpady_Project
 					JeopardyBoard.DefaultPoints = (int)json["Board"]["DefaultPoints"];
 					JeopardyBoard.Categories = JsonConvert.DeserializeObject<JeopardyCategory[]>(json["Board"]["Categories"].ToString());
 					JeopardyBoard.Players = JsonConvert.DeserializeObject<List<JeopardyPlayer>>(json["Board"]["Players"].ToString());
-					JeopardyBoard.FinalQuestion = JsonConvert.DeserializeObject<JeopardyItemText>(json["Board"]["FinalQuestion"].ToString());
+					JeopardyBoard.FinalQuestion = JsonConvert.DeserializeObject<JeopardyItem>(json["Board"]["FinalQuestion"].ToString());
 
 					MessageBox.Show("Board successfully setup.", "Success!", MessageBoxButton.OK, MessageBoxImage.Information);
 				}

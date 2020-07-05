@@ -18,28 +18,14 @@ namespace Jeorpady_Project
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
-	/// 
-	public static class ThisIsAStaticClass
-	{
-		public static int RetInt()
-		{
-			return 5;
-		}
-	}
-
+	///
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
 		{
-			/*Window window = new Window();
-			window.Show();*/
-
 			InitializeComponent();
-			this.WindowState = WindowState.Maximized;
-			this.WindowStyle = WindowStyle.None;
 
-			BrushConverter converter = new BrushConverter();
-			Brush blueBrush = (Brush)converter.ConvertFromString("#000000");
+			Main.Content = new MainMenu();
 		}
 
 		private void EscapeWindowHandler(object sender, KeyEventArgs e)

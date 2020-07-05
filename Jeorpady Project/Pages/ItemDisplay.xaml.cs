@@ -36,7 +36,7 @@ namespace Jeorpady_Project
 			}
 		}
 
-		public ItemDisplay(IJeopardyItem item)
+		public ItemDisplay(JeopardyItem item)
 		{
 			BrushConverter converter = new BrushConverter();
 			Brush blueBrush = (Brush)converter.ConvertFromString("#0e1684");
@@ -97,7 +97,7 @@ namespace Jeorpady_Project
 		{
 			if (chosenPlayer != null)
 			{
-				chosenPlayer.Points += ((IJeopardyItem)((Button)sender).Tag).Points;
+				chosenPlayer.Points += ((JeopardyItem)((Button)sender).Tag).Points;
 			}
 
 			if (JeopardyBoard.Categories.FirstOrDefault(x => x.Items.Count(y => y.HasBeenAnswered == false) > 0) == null)

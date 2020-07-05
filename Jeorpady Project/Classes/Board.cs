@@ -33,7 +33,7 @@ namespace Jeorpady_Project
 
 		public static List<JeopardyPlayer> Players { get; set; } = new List<JeopardyPlayer>();
 
-		public static JeopardyItemText FinalQuestion = null;
+		public static JeopardyItem FinalQuestion = null;
 
 		public static bool HasFinalQuestion()
 		{
@@ -60,84 +60,16 @@ namespace Jeorpady_Project
 	public class JeopardyCategory
 	{
 		public string CategoryName { get; set; }
-		public IJeopardyItem[] Items { get; set; }
+		public JeopardyItem[] Items { get; set; }
 	}
 
-	public class JeopardyItemVideo : IJeopardyItem
+	public class JeopardyItem
 	{
-		public JeopardyItemVideo(string question, string answer, string videoUrl)
-		{
-			Question = question;
-			Answer = answer;
-			VideoUrl = videoUrl;
-		}
-
-		public JeopardyItemVideo()
-		{
-
-		}
-
 		public string Question { get; set; }
 		public string Answer { get; set; }
 		public int Points { get; set; }
 		public bool HasBeenAnswered { get; set; } = false;
-		public string VideoUrl { get; set; }
-
-		public Categories ItemType
-		{
-			get
-			{
-				return Categories.VIDEO;
-			}
-		}
-	}
-
-	public class JeopardyItemImage : IJeopardyItem
-	{
-		public JeopardyItemImage(string question, string answer, string imageUrl)
-		{
-			Question = question;
-			Answer = answer;
-			ImageUrl = imageUrl;
-		}
-
-		public JeopardyItemImage()
-		{
-
-		}
-
-		public string Question { get; set; }
-		public string Answer { get; set; }
-		public int Points { get; set; }
-		public bool HasBeenAnswered { get; set; } = false;
-		public string ImageUrl { get; set; }
-
-		public Categories ItemType
-		{
-			get
-			{
-				return Categories.IMAGE;
-			}
-		}
-	}
-
-	public class JeopardyItemText : IJeopardyItem
-	{
-		public JeopardyItemText(string question, string answer)
-		{
-			Question = question;
-			Answer = answer;
-		}
-
-		public JeopardyItemText()
-		{
-
-		}
-
-		public string Question { get; set; }
-		public string Answer { get; set; }
-		public int Points { get; set; }
-		public bool HasBeenAnswered { get; set; } = false;
+		public string MediaUrl;
 
 		public Categories ItemType
 		{
@@ -146,15 +78,6 @@ namespace Jeorpady_Project
 				return Categories.TEXT;
 			}
 		}
-	}
-
-	public interface IJeopardyItem
-	{
-		Categories ItemType { get; }
-		string Question { get; set; }
-		string Answer { get; set; }
-		int Points { get; set; }
-		bool HasBeenAnswered { get; set; }
 	}
 
 	public class JeopardyConverter : JsonConverter<Version>
