@@ -1,0 +1,104 @@
+{
+	"Board":
+	{
+		"MaxNumberOfRows": 3,
+		"DefaultPoints": 200,
+		"Categories": 
+		[
+			{
+				"categoryName": "Brudeparet",
+				"items": 
+				[
+					{
+						"question": "Elsker at vinde højere end sine børn.",
+						"answer": "Hvad er far.",
+						"points": 0,
+						"hasBeenAnswered": false,
+						"itemType": 1
+					},
+					{
+						"question": "Siger ofte dette: Christian, nej Martin, nej, nej Cecilia, nej, Sebastian, nej Rasmus - har du hentet Mikkel?",
+						"answer": "Hvem er mor.",
+						"points": 0,
+						"hasBeenAnswered": false,
+						"itemType": 1
+					},
+					{
+						"question": "Kan på magisk vis se film med lukkede øjne.",
+						"answer": "Hvem er far.",
+						"points": 0,
+						"hasBeenAnswered": false,
+						"itemType": 1
+					}
+				]
+			},
+			{
+				"categoryName": "Fem møgunger",
+				"items": 
+				[
+					{
+						"question": "Seb smadrer rude",
+						"answer": "",
+						"points": 0,
+						"hasBeenAnswered": false,
+						"itemType": 1
+					},
+					{
+						"question": "Mikkel og Cecilia har fyldt forkert brændstof på. Og far",
+						"answer": "",
+						"points": 0,
+						"hasBeenAnswered": false,
+						"itemType": 1
+					},
+					{
+						"question": "klippe seler af autostole",
+						"answer": "",
+						"points": 0,
+						"hasBeenAnswered": false,
+						"itemType": 1
+					}
+				]
+			},
+			{
+				"categoryName": "Hverdagen",
+				"items": 
+				[
+					{
+						"question": "far der går ind i døren",
+						"answer": "far",
+						"points": 0,
+						"hasBeenAnswered": false,
+						"itemType": 1
+					},
+					{
+						"question": "Laver mad til 20, når han/hun prøver at lave mad til fem",
+						"answer": "mor",
+						"points": 0,
+						"hasBeenAnswered": false,
+						"itemType": 1
+					},
+					{
+						"question": "Tør kylling og pasta med ketchup. Hvad er fars evner i et køkken.",
+						"answer": "far",
+						"points": 0,
+						"hasBeenAnswered": false,
+						"itemType": 1
+					}
+				]
+			}
+		],
+		"Players":
+		[
+			{
+				"points": 0,
+				"name": "Mor"
+			},
+			{
+				"points": 0,
+				"name": "Far"
+			}
+		],
+		"FinalQuestion": null
+	}
+}
+
