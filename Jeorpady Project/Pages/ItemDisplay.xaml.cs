@@ -98,6 +98,8 @@ namespace Jeorpady_Project
 			if (chosenPlayer != null)
 			{
 				chosenPlayer.Points += ((JeopardyItem)((Button)sender).Tag).Points;
+				chosenPlayer = null;
+				foreach(JeopardyPlayer p in JeopardyBoard.Players) { Console.WriteLine(p.Name + ": " + p.Points); }
 			}
 
 			if (JeopardyBoard.Categories.FirstOrDefault(x => x.Items.Count(y => y.HasBeenAnswered == false) > 0) == null)

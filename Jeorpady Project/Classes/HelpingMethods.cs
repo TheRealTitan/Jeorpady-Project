@@ -36,6 +36,7 @@ namespace Jeorpady_Project
 			Label outerLabel = new Label();
 			text.Foreground = textColor;
 			text.Text = label;
+			text.TextAlignment = TextAlignment.Center;
 			text.TextWrapping = TextWrapping.WrapWithOverflow;
 			text.FontFamily = new FontFamily("Berlin Sans FB");
 			text.FontWeight = FontWeights.ExtraBold;

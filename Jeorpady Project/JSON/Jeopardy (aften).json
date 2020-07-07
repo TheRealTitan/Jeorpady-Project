@@ -7,35 +7,35 @@
         "categoryName": "Familien Anbergs Catchphrases",
         "items": [
           {
-            "question": "Rasmus svarer ofte dette når han ser TV om aftenen.",
+            "question": "Rasmus svarer ofte \ndette når han ser TV \nom aftenen.",
             "answer": "Hvad er 'Jeg er vågen'?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Personen ytrer dette når vred. (Demonstration)",
+            "question": "Personen ytrer dette \nnår vred. \n(Demonstration)",
             "answer": "Hvem er Rasmus?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Et andet ord for ekskrementer.",
+            "question": "Martins mest \nbrugte ord.",
+            "answer": "Hvad er 'hvad'?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Et andet ord for \ntoilet besøg.",
             "answer": "Hvad er uuuh?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Martins mest brugte ord.",
-            "answer": "Hvad er hvad?",
-            "points": 0,
-            "hasBeenAnswered": false,
-            "itemType": 1
-          },
-          {
-            "question": "Cecilia spørger ofte dette ved spisebordet.",
+            "question": "Cecilia spørger ofte dette \nved spisebordet.",
             "answer": "Hvad er 'skal vi dele' eller 'må jeg smage'?",
             "points": 0,
             "hasBeenAnswered": false,
@@ -47,35 +47,35 @@
         "categoryName": "Ferieminder",
         "items": [
           {
-            "question": "Landet vi fløj til hvor flyet blev holdt tilbage, fordi Cecilia ikke mødte op til terminalen.",
+            "question": "Landet vi fløj fra \nhvor flyet blev holdt tilbage, \nfordi Cecilia ikke mødte \nop til terminalen.",
             "answer": "Hvad er Lanzarote?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Ventede 32 timer i denne lufthavn.",
+            "question": "Ventede 32 timer \ni denne lufthavn.",
             "answer": "Hvad er Dubai?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Rasmus faldt i søvn på vejen til dette sted, bag rettet.",
+            "question": "Rasmus faldt i søvn \npå vejen til dette sted, \nbag rettet.",
             "answer": "Hvad er Disneyland Paris?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Islandsk varm kilde hvor brudeparret smurte sig ind i \"sæbe\" de fandt på kildens bund.",
+            "question": "Islandsk varme kilde \nhvor brudeparret smurte sig ind \ni \"sæbe\" de fandt på \nkildens bund.",
             "answer": "Hvad er 'The Blue Lagoon'?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Forlystelsen i 'Universal Studio Theme Park' blev lokket op i, hvor strømmen gik.",
+            "question": "Forlystelsen i \n'Universal Studio Theme Park' \nAnette blev lokket op i, \nhvor strømmen gik.",
             "answer": "Hvad er mumien (The Mummy)?",
             "points": 0,
             "hasBeenAnswered": false,
@@ -87,36 +87,36 @@
         "categoryName": "Dumme Ting",
         "items": [
           {
-            "question": "Toga party hvor folk går rundt i lagner.",
-            "answer": "Hvad er et LAN?",
-            "points": 0,
-            "hasBeenAnswered": false,
-            "itemType": 1
-          },
-          {
-            "question": "Rasmus slap for en bøde ved at give betjenten dette ID.",
+            "question": "Rasmus slap for en bøde \nved at give betjenten \ndette ID.",
             "answer": "Hvad er Sebastians sygesikringskort?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Dette burde ikke have kommet i blænderen.",
+            "question": "Dette burde ikke have \nkommet i blenderen.",
             "answer": "Hvad er Annettes hånd?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Ifølge Rasmus, burde man køre ind i dette i stedet for et stillads.", 
+            "question": "Ifølge Rasmus, \nburde man køre ind i dette \ni stedet for et stillads.",
             "answer": "Hvad er en mur?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Anette rev dette afled.", 
+            "question": "Anette rev \ndette afled.",
             "answer": "Hvad er Christians arm?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Toga party \nhvor folk går rundt \ni lagner.",
+            "answer": "Hvad er et LAN?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
@@ -136,7 +136,7 @@
     ],
     "FinalQuestion": 
     {
-      "question": "Anette gav Rasmus dette første gang de mødte hinanden.",
+      "question": "Anette gav Rasmus denne drink første gang de mødte hinanden.",
       "answer": "Hvad er en Jolly Cola?",
       "points": 0,
       "hasBeenAnswered": false,

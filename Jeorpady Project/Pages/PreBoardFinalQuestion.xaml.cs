@@ -31,7 +31,7 @@ namespace Jeorpady_Project
 			Grid grid = new Grid();
 			grid.Background = blueBrush;
 
-			grid.Children.Add(HelpingMethods.GenerateViewBox("Betting period...", Brushes.White, false));
+			grid.Children.Add(HelpingMethods.GenerateViewBox("Sats...", Brushes.White, false));
 
 			this.Content = grid;
 		}

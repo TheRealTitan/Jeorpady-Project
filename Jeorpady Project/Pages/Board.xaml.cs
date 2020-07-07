@@ -94,77 +94,7 @@ namespace Jeorpady_Project
 			mainPanel.Children.Add(scorePanel);
 
 			this.Content = mainPanel;
-
-			//mainPanel.HorizontalAlignment = HorizontalAlignment.Stretch;
-			//mainPanel.VerticalAlignment = VerticalAlignment.Stretch;
-			/*Grid grid = new Grid();
-			grid.SetValue(DockPanel.DockProperty, Dock.Top);
-
-			mainPanel.Background = blueBrush;
 			
-			int counter = 0;
-
-			foreach(JeopardyCategory c in JeopardyBoard.Categories)
-			{
-				grid.ColumnDefinitions.Add(new ColumnDefinition());
-
-				Label category = GenerateCategory(c);
-				Border borderCat = GenerateBorder(counter, 0);
-
-				borderCat.Child = category;
-				grid.Children.Add(borderCat);
-
-				for (int i = 0; i < c.Items.Length; i++)
-				{
-					if (grid.RowDefinitions.Count <= i)
-					{
-						RowDefinition row = new RowDefinition();
-						grid.RowDefinitions.Add(row);
-					}
-
-					if(c.Items[i] != null && c.Items[i].HasBeenAnswered == false)
-					{
-						Border border = GenerateBorder(counter, i + 1);
-						Button button = GenerateItem(c.Items[i], i + 1);
-						button.Click += Button_Click;
-						border.Child = button;
-						grid.Children.Add(border);
-					}
-					else
-					{
-						Border border = GenerateBorder(counter, i + 1);
-						Label label = GenerateEmptyItem();
-						border.Child = label;
-						grid.Children.Add(border);
-					}
-				}
-				counter++;
-			}
-
-			Console.WriteLine("Counter: " + counter);
-
-			mainPanel.Children.Add(grid);
-			
-			StackPanel scorePanel = new StackPanel();
-			scorePanel.Orientation = Orientation.Horizontal;
-			scorePanel.MaxHeight = 80;
-			//scorePanel.VerticalAlignment = VerticalAlignment.Stretch;
-			//scorePanel.HorizontalAlignment = HorizontalAlignment.Stretch;
-
-
-			foreach (JeopardyPlayer player in JeopardyBoard.Players)
-			{
-				Viewbox viewbox = HelpingMethods.GenerateViewBox(player.Name + ": " + player.Points, Brushes.White, false);
-				viewbox.SetValue(DockPanel.DockProperty, Dock.Top);
-				//viewbox.HorizontalAlignment = HorizontalAlignment.Stretch;
-				//viewbox.VerticalAlignment = VerticalAlignment.Stretch;
-				viewbox.Margin = new Thickness(20, 5, 20, 5);
-				scorePanel.Children.Add(viewbox);
-			}
-
-			mainPanel.Children.Add(scorePanel);
-			
-			this.Content = mainPanel;*/
 			#endregion
 		}
 
@@ -172,8 +102,6 @@ namespace Jeorpady_Project
 		{
 			JeopardyItem item = (JeopardyItem)((Button)sender).Tag;
 			item.HasBeenAnswered = true;
-
-			Console.WriteLine("Item: " + item.Question);
 
 			if (item.ItemType == Categories.TEXT)
 			{
@@ -214,7 +142,7 @@ namespace Jeorpady_Project
 			Button button = new Button();
 			button.Background = blueBrush;
 			item.Points = xCord * JeopardyBoard.DefaultPoints;
-			button.Content = HelpingMethods.GenerateViewBox("$ " + item.Points.ToString(), yellowBrush, true);
+			button.Content = HelpingMethods.GenerateViewBox(item.Points.ToString(), yellowBrush, true);
 			
 			button.Tag = item;
 

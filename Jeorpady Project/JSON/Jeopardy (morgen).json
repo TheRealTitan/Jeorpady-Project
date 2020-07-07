@@ -7,37 +7,36 @@
         "categoryName": "Brudeparret",
         "items": [
           {
-            "question": "Personen elsker at vinde højere end sine børn.",
-            "answer": "Hvem er far.",
+            "question": "Personen elsker at vinde \nhøjere end sine børn.",
+            "answer": "Hvem er Rasmus?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Siger ofte dette: Christian, nej Martin, nej, nej Cecilia, nej, Sebastian, nej Rasmus - har du hentet Mikkel?", //TODO
+            "question": "Siger ofte dette: \n\"Christian, nej Martin, \nnej, nej Cecilia, nej, Sebastian - \nhar du hentet Mikkel?\".",
             "answer": "Hvem er Anette?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Filmen Rasmus \"ser\"", //TODO
-            "answer": "Hvad er ()",
+            "question": "Filmen Rasmus sidder og \"ser\".",
+            "answer": "Hvad er (Vilkårlig film)?",
             "points": 0,
-            "MediaUrl": "Pictures\\104925807_863355850858744_4282312262427666671_n.jpg",
+            "MediaUrl": "Pictures\\105353240_310557496637119_5105786878849333349_n.jpg",
             "hasBeenAnswered": false,
             "itemType": 2
           },
           {
-            "question": "Stiller spørgsmål til filmen.", //TODO
-            "answer": "Hvem er Anette.",
+            "question": "Personen stiller 100+ \nspørgsmål under en film.", //TODO
+            "answer": "Hvem er Anette?",
             "points": 0,
             "hasBeenAnswered": false,
-            "MediaUrl": "C:\\Users\\anber\\Documents\\jeopardy-game-board-dollar-levels.png",
-            "itemType": 2
+            "itemType": 1
           },
           {
-            "question": "Dette gør Rasmus ved spisebordet",
+            "question": "En usædvanlig morgenrutine.",
             "answer": "Hvad er at klippe negle?",
             "points": 0,
             "hasBeenAnswered": false,
@@ -57,14 +56,14 @@
             "itemType": 1
           },
           {
-            "question": "Fyldte forkert brændstof på bilen.",
+            "question": "Fyldte forkert \nbrændstof på \nbilen.",
             "answer": "Hvem er Mikkel, Cecilia eller Rasmus?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Kørte ind i et stødhegn.",
+            "question": "Kørte ind i \net stødhegn.",
             "answer": "Hvem er Mikkel?",
             "points": 0,
             "hasBeenAnswered": false,
@@ -78,7 +77,7 @@
             "itemType": 1
           },
           {
-            "question": "Organisationen der går klædt i for store frakker og træsko, som tager børn væk fra deres forældre, når de ikke opfører sig ordentligt.",
+            "question": "Organisationen der går klædt i \nfor store frakker og træsko, \nsom tager børn væk fra deres forældre, \nnår de ikke opfører sig \nordentligt.",
             "answer": "Hvad er Børnepolitiet?",
             "points": 0,
             "hasBeenAnswered": false,
@@ -90,33 +89,41 @@
         "categoryName": "Hverdagen",
         "items": [
           {
-            "question": "far der går ind i døren",
-            "answer": "far",
-            "points": 0,
-            "hasBeenAnswered": false,
-            "itemType": 1
-          },
-          {
-            "question": "Skulle være afskaffet men bliver stadig serveret hver fredag.",
+            "question": "Skulle være afskaffet \nmen bliver stadig serveret \nhver fredag.",
             "answer": "Hvad er pizza?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Dette måltid er ifølge Anette lig et måltid til fem.",
+            "question": "Dette måltid er \nifølge Anette lig et måltid \ntil fem.",
             "answer": "hvad er et måltid til 20?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
           },
           {
-            "question": "Retten der serveres når Rasmus står for maden og der ikke kan grilles.",
+            "question": "Retten der serveres \nnår Rasmus står for maden \nog der ikke kan grilles.",
             "answer": "Hvad er tør kylling´, pasta og ketchup?",
             "points": 0,
             "hasBeenAnswered": false,
             "itemType": 1
+          },
+          {
+            "question": "Rasmus og Annettes fortolkning af: \n'Et glas vin om dagen er god motion'.",
+            "answer": "Hvad er 'En flaske vin om dagen er god motion'?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "På grund af dette mejeri produkt, \nslog Rasmus så hårdt til en dør \nat den ramte ham selv i hovedet.",
+            "answer": "Hvad er toast ost?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
           }
+
         ]
       }
     ],

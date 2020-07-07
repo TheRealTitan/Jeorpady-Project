@@ -41,7 +41,7 @@ namespace Jeorpady_Project
 				}
 			}
 
-			Viewbox viewbox = HelpingMethods.GenerateViewBox("The winner is: " + winner.Name + "." + Environment.NewLine + "Score: " + winner.Points, yellowBrush, false);
+			Viewbox viewbox = HelpingMethods.GenerateViewBox("Vinderen er: " + winner.Name + "." + Environment.NewLine + "Score: " + winner.Points, yellowBrush, false);
 
 			grid.Children.Add(viewbox);
 			this.Content = grid;
