@@ -1,4 +1,4 @@
-﻿<Page x:Class="Jeorpady_Project.Board"
+﻿<Page x:Class="Jeorpady_Project.PreItemDisplay"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,14 +6,13 @@
       xmlns:local="clr-namespace:Jeorpady_Project"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Board">
+      Title="PreItemDisplay">
 
-    <UniformGrid Background="#0e1684" Columns="3" Rows="3">
-        <Button>
-            
+    <Grid>
+        <Button Click="NextBtn" Background="Blue">
+            <Viewbox>
+                <TextBlock TextWrapping="Wrap" Text="NEXT"></TextBlock>
+            </Viewbox>
         </Button>
-        <Button>
-            
-        </Button>
-    </UniformGrid>
+    </Grid>
 </Page>

@@ -21,10 +21,14 @@ namespace Jeorpady_Project
 	///
 	public partial class MainWindow : Window
 	{
+		static BrushConverter converter = new BrushConverter();
+		static Brush blueBrush = (Brush)converter.ConvertFromString("#0e1684");
+
 		public MainWindow()
 		{
 			InitializeComponent();
 
+			new BoardWindow();
 			Main.Content = new MainMenu();
 		}
 
@@ -37,8 +41,6 @@ namespace Jeorpady_Project
 
 			if(e.Key == Key.Enter)
 			{
-				Console.WriteLine("Enter");
-
 				Main.Content = new MainMenu();
 			}
 
@@ -49,11 +51,7 @@ namespace Jeorpady_Project
 		}
 
 		private void DisplayMenu()
-		{
-			BrushConverter converter = new BrushConverter();
-			Brush blueBrush = (Brush)converter.ConvertFromString("#0e1684");
-			Brush blackBrush = (Brush)converter.ConvertFromString("#000000");
-						
+		{		
 			Grid grid = new Grid();
 
 			grid.Children.Clear();

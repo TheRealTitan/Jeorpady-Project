@@ -1,0 +1,135 @@
+{
+  "Board": {
+    "MaxNumberOfRows": 5,
+    "DefaultPoints": 200,
+    "Categories": [
+      {
+        "categoryName": "Brudeparret",
+        "items": [
+          {
+            "question": "Personen elsker at vinde højere end sine børn.",
+            "answer": "Hvem er far.",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Siger ofte dette: Christian, nej Martin, nej, nej Cecilia, nej, Sebastian, nej Rasmus - har du hentet Mikkel?", //TODO
+            "answer": "Hvem er Anette?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Filmen Rasmus \"ser\"", //TODO
+            "answer": "Hvad er ()",
+            "points": 0,
+            "MediaUrl": "Pictures\\104925807_863355850858744_4282312262427666671_n.jpg",
+            "hasBeenAnswered": false,
+            "itemType": 2
+          },
+          {
+            "question": "Stiller spørgsmål til filmen.", //TODO
+            "answer": "Hvem er Anette.",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "MediaUrl": "C:\\Users\\anber\\Documents\\jeopardy-game-board-dollar-levels.png",
+            "itemType": 2
+          },
+          {
+            "question": "Dette gør Rasmus ved spisebordet",
+            "answer": "Hvad er at klippe negle?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "MediaUrl": "Pictures\\104725007_339103190406000_3675424715585055684_n.jpg",
+            "itemType": 2
+          }
+        ]
+      },
+      {
+        "categoryName": "Fem møgunger",
+        "items": [
+          {
+            "question": "Smadrede ruden på familiens bil.",
+            "answer": "Hvem er Sebastian?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Fyldte forkert brændstof på bilen.",
+            "answer": "Hvem er Mikkel, Cecilia eller Rasmus?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Kørte ind i et stødhegn.",
+            "answer": "Hvem er Mikkel?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Klippede seler af autostole.",
+            "answer": "Hvem er Cecilia?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Organisationen der går klædt i for store frakker og træsko, som tager børn væk fra deres forældre, når de ikke opfører sig ordentligt.",
+            "answer": "Hvad er Børnepolitiet?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          }
+        ]
+      },
+      {
+        "categoryName": "Hverdagen",
+        "items": [
+          {
+            "question": "far der går ind i døren",
+            "answer": "far",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Skulle være afskaffet men bliver stadig serveret hver fredag.",
+            "answer": "Hvad er pizza?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Dette måltid er ifølge Anette lig et måltid til fem.",
+            "answer": "hvad er et måltid til 20?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          },
+          {
+            "question": "Retten der serveres når Rasmus står for maden og der ikke kan grilles.",
+            "answer": "Hvad er tør kylling´, pasta og ketchup?",
+            "points": 0,
+            "hasBeenAnswered": false,
+            "itemType": 1
+          }
+        ]
+      }
+    ],
+    "Players": [
+      {
+        "points": 0,
+        "name": "Anette"
+      },
+      {
+        "points": 0,
+        "name": "Rasmus"
+      }
+    ],
+    "FinalQuestion": null
+  }
+}

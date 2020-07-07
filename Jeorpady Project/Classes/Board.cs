@@ -47,8 +47,9 @@ namespace Jeorpady_Project
 
 	public class JeopardyPlayer
 	{
-		public int Points = 0;
-		public string Name;
+		public int Points { get; set; } = 0;
+		public string Name { get; set; }
+		public int FinalQuestionPoints { get; set; }
 
 		public JeopardyPlayer()
 		{
@@ -69,15 +70,9 @@ namespace Jeorpady_Project
 		public string Answer { get; set; }
 		public int Points { get; set; }
 		public bool HasBeenAnswered { get; set; } = false;
-		public string MediaUrl;
+		public string MediaUrl { get; set; }
 
-		public Categories ItemType
-		{
-			get
-			{
-				return Categories.TEXT;
-			}
-		}
+		public Categories ItemType { get; set; }
 	}
 
 	public class JeopardyConverter : JsonConverter<Version>

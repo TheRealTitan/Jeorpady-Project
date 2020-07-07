@@ -20,6 +20,9 @@ namespace Jeorpady_Project
 	/// </summary>
 	public partial class ItemDisplay : Page
 	{
+		static BrushConverter converter = new BrushConverter();
+		static Brush blueBrush = (Brush)converter.ConvertFromString("#0e1684");
+
 		public static JeopardyPlayer chosenPlayer;
 		public static Button nextButton;
 
@@ -38,9 +41,6 @@ namespace Jeorpady_Project
 
 		public ItemDisplay(JeopardyItem item)
 		{
-			BrushConverter converter = new BrushConverter();
-			Brush blueBrush = (Brush)converter.ConvertFromString("#0e1684");
-
 			InitializeComponent();
 
 			Grid grid = new Grid();
@@ -102,19 +102,21 @@ namespace Jeorpady_Project
 
 			if (JeopardyBoard.Categories.FirstOrDefault(x => x.Items.Count(y => y.HasBeenAnswered == false) > 0) == null)
 			{
-				Console.WriteLine("Done");
 				if (JeopardyBoard.HasFinalQuestion())
 				{
-					((MainWindow)Application.Current.MainWindow).Main.Content = new FinalQuestion(); //TODO: Final Question
+					((MainWindow)Application.Current.MainWindow).Main.Content = new PreFinalQuestion(); //TODO: Final Question
+					((BoardWindow)HelpingMethods.GetBoardWindow()).Board.Content = new PreBoardFinalQuestion();
 				}
 				else
 				{
 					((MainWindow)Application.Current.MainWindow).Main.Content = new ScoreBoard(); //Game Over Page (ScoreBoard)
+					((BoardWindow)HelpingMethods.GetBoardWindow()).Board.Content = new ScoreBoard();
 				}
 			}
 			else
 			{
 				((MainWindow)Application.Current.MainWindow).Main.Content = new Board();
+				((BoardWindow)HelpingMethods.GetBoardWindow()).Board.Content = new Board();
 			}
 
 		}

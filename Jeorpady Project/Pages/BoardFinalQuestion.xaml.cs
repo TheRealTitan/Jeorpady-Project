@@ -15,36 +15,24 @@ using System.Windows.Shapes;
 
 namespace Jeorpady_Project
 {
-    /// <summary>
-    /// Interaction logic for ScoreBoard.xaml
-    /// </summary>
-    public partial class ScoreBoard : Page
-    {
+	/// <summary>
+	/// Interaction logic for BoardFinalQuestion.xaml
+	/// </summary>
+	public partial class BoardFinalQuestion : Page
+	{
 		static BrushConverter converter = new BrushConverter();
 		static Brush blueBrush = (Brush)converter.ConvertFromString("#0e1684");
 		static Brush yellowBrush = (Brush)converter.ConvertFromString("#d6aa4c");
 
-		public ScoreBoard()
-        {
-            InitializeComponent();
+		public BoardFinalQuestion()
+		{
+			InitializeComponent();
 
 			Grid grid = new Grid();
 			grid.Background = blueBrush;
+			grid.Children.Add(HelpingMethods.GenerateViewBox(JeopardyBoard.FinalQuestion.Question, Brushes.White, false));
 
-			JeopardyPlayer winner = null;
-
-			foreach(JeopardyPlayer player in JeopardyBoard.Players)
-			{
-				if(winner == null || winner.Points < player.Points)
-				{
-					winner = player;
-				}
-			}
-
-			Viewbox viewbox = HelpingMethods.GenerateViewBox("The winner is: " + winner.Name + "." + Environment.NewLine + "Score: " + winner.Points, yellowBrush, false);
-
-			grid.Children.Add(viewbox);
 			this.Content = grid;
-        }
-    }
+		}
+	}
 }

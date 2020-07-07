@@ -23,7 +23,6 @@ namespace Jeorpady_Project
 		public BoardMenu()
 		{
 			InitializeComponent();
-			
 		}
 
 		private void StartGame(object sender, RoutedEventArgs e)
@@ -31,7 +30,9 @@ namespace Jeorpady_Project
 			if (JeopardyBoard.Categories != null && JeopardyBoard.Categories.Count() > 0 && JeopardyBoard.Players.Count > 0)
 			{
 				HelpingMethods.GetBoardWindow().Show();
+				((BoardWindow)HelpingMethods.GetBoardWindow()).Board.Content = new Board();
 				((MainWindow)Application.Current.MainWindow).Main.Content = new Board();
+				
 			}
 			else
 			{

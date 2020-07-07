@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Jeorpady_Project"
         mc:Ignorable="d"
-        Name="MainWindow"
+        Name="MainWindowName"
         WindowState="Maximized"
         WindowStyle="None"
         Title="MainWindow" Height="450" Width="800"
         KeyDown="EscapeWindowHandler">
     <Grid  Name="mainGrid" Background="Black" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-        <Frame x:Name="Main" NavigationUIVisibility="Hidden" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0"/>
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" Width="auto" Height="auto"/>
     </Grid>
 </Window>

@@ -62,6 +62,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\BoardFinalQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\BoardItemDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\BoardMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -82,6 +90,12 @@
       <DependentUpon>BoardWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Classes\HelpingMethods.cs" />
+    <Compile Include="Pages\BoardFinalQuestion.xaml.cs">
+      <DependentUpon>BoardFinalQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BoardItemDisplay.xaml.cs">
+      <DependentUpon>BoardItemDisplay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\BoardMenu.xaml.cs">
       <DependentUpon>BoardMenu.xaml</DependentUpon>
     </Compile>
@@ -102,6 +116,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PreBoardFinalQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PreBoardItemDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PreFinalQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PreItemDisplay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -127,6 +157,18 @@
     </Compile>
     <Compile Include="Pages\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PreBoardFinalQuestion.xaml.cs">
+      <DependentUpon>PreBoardFinalQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PreBoardItemDisplay.xaml.cs">
+      <DependentUpon>PreBoardItemDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PreFinalQuestion.xaml.cs">
+      <DependentUpon>PreFinalQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PreItemDisplay.xaml.cs">
+      <DependentUpon>PreItemDisplay.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ScoreBoard.xaml.cs">
       <DependentUpon>ScoreBoard.xaml</DependentUpon>
@@ -154,7 +196,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="JSON\Jeopardy.json" />
+    <None Include="JSON\Jeopardy %28aften%29.json" />
+    <None Include="JSON\Jeopardy %28morgen%29.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -163,6 +206,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\104725007_339103190406000_3675424715585055684_n.jpg" />
+    <Resource Include="Pictures\104925807_863355850858744_4282312262427666671_n.jpg" />
+    <Resource Include="Pictures\104952967_380711382905434_8712977339727843621_n.jpg" />
+    <Resource Include="Pictures\105291868_548462475824354_8705788637639032397_n.jpg" />
+    <Resource Include="Pictures\105336373_555791978638775_8755673783126059515_n.jpg" />
+    <Resource Include="Pictures\105353240_310557496637119_5105786878849333349_n.jpg" />
+    <Resource Include="Pictures\105379106_639587413296957_3086879878799209850_n.jpg" />
+    <Resource Include="Pictures\105632952_610174003213281_8884940663224524181_n.jpg" />
+    <Resource Include="Pictures\105901395_570510400314385_3916480199439333842_n.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

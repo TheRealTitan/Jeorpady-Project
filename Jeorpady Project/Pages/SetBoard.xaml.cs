@@ -43,8 +43,6 @@ namespace Jeorpady_Project
 
 				try
 				{
-					Console.WriteLine(fileName);
-
 					JObject json = JObject.Parse(File.ReadAllText(fileName));
 
 					JeopardyBoard.MaxNumberOfRows = (int)json["Board"]["MaxNumberOfRows"];
